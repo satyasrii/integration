@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'After Editing Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'After Editing Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'After Editing Deploying....'
+            }
+        }
+          stage('Prod') {
+            steps {
+                echo 'After Editing Prod.. manulaly added.... and SCM Test'
+            }
+        }
+       
+    }
+}
